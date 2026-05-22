@@ -1,0 +1,35 @@
+:root{
+    --azulPrincipal: #0057FA;
+    --azulMedio: #007DF9;
+    --azulBajo: #0FB9F7;
+    --paddingPadre: 1.2rem;
+    --blancoFantasma: #F8F8FA;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezadoHome{
+    padding: var(--paddingPadre);
+    background: linear-gradient(to right, var(--azulPrincipal), var(--azulMedio));
+}
+
+.btnHome, .btnSalir{
+    color: var(--blancoFantasma);
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.btnSalir{
+    border: 3px solid var(--blancoFantasma);
+    border-radius: .5rem;
+    padding: .5rem;
+}
