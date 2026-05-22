@@ -1,1 +1,28 @@
 @import url('./reset.css');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #F8F8FA;
+}
+
+.encabezado{
+    padding: 1.5rem;
+}
+
+.creator{
+    text-align: center;
+}
+
+.creator img{
+    width: 12rem;
+}
+
+main{
+    text-align: center;
+    width: 100vw;
+}
+
+main img{
+    width: 10rem;
+}
