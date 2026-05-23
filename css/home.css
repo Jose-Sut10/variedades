@@ -1,9 +1,10 @@
 :root{
+    --paddingPadre: 1.2rem;
     --azulPrincipal: #0057FA;
     --azulMedio: #007DF9;
     --azulBajo: #0FB9F7;
-    --paddingPadre: 1.2rem;
     --blancoFantasma: #F8F8FA;
+    --colorSettings: #f5b800;
 }
 
 *{
@@ -19,12 +20,12 @@
 
 .encabezadoHome{
     padding: var(--paddingPadre);
-    background: linear-gradient(to right, var(--azulPrincipal), var(--azulMedio));
+    background-image: linear-gradient(109.6deg, var(--azulPrincipal) 11.2%, var(--azulMedio) 100.2%);
 }
 
 .btnHome, .btnSalir{
     color: var(--blancoFantasma);
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-decoration: none;
 }
 
@@ -32,4 +33,45 @@
     border: 3px solid var(--blancoFantasma);
     border-radius: .5rem;
     padding: .5rem;
+}
+
+/*Estilos main*/
+.contenido{
+    padding: var(--paddingPadre);
+}
+
+.conatainerContenido h3{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card{
+    padding: var(--paddingPadre);
+    border-radius: 1rem;
+    border: 1px solid var(--colorSettings);
+    border-top: 6px solid var(--colorSettings);
+
+}
+
+.iconBox{
+    font-size:3rem;
+    color: var(--colorSettings);
+    justify-content: center;
+}
+
+.card h2{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--colorSettings);
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.card p{
+    font-size: .9rem;
+    line-height:1.5;
+    color:#000000;
+    text-align: center;
 }
