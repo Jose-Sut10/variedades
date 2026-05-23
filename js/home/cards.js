@@ -34,6 +34,11 @@ const cards = [
         titulo: "Recibos",
         descripcion: "Crea y visualiza todas las ventas",
         color: "--colorRecibos"
+    },{
+        icono: "fa-solid fa-chart-line",
+        titulo: "Reportes",
+        descripcion: "Visualiza los movimientos de la empresa",
+        color: "--colorReportes"
     }
 ];
 

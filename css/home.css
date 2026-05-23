@@ -10,6 +10,7 @@
     --colorCalendario: #0EAB57;
     --colorProductos: #0578AC;
     --colorRecibos: #EAAE35;
+    --colorReportes: #1977d6;
 }
 
 *{
@@ -52,10 +53,15 @@
     margin-bottom: 1rem;
 }
 
+.cardsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .card{
     padding: var(--paddingPadre);
     border-radius: 1rem;
-    margin-bottom: 2rem;
     box-shadow: rgba(0, 0, 0, 0.3) 4px 4px 10px;
 }
 
@@ -76,4 +82,20 @@
     line-height:1.5;
     color:#000000;
     text-align: center;
+}
+
+.piePagina{
+    padding: var(--paddingPadre);
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+.devs{
+    margin-top: .5rem;
+}
+
+.devs a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--azulMedio);
 }
