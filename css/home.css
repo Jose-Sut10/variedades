@@ -26,7 +26,7 @@
 
 .encabezadoHome{
     padding: var(--paddingPadre);
-    background-image: linear-gradient(109.6deg, var(--azulPrincipal) 11.2%, var(--azulMedio) 100.2%);
+    background-color: var(--azulMedio);
 }
 
 .btnHome, .btnSalir{
