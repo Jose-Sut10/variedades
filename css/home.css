@@ -4,7 +4,12 @@
     --azulMedio: #007DF9;
     --azulBajo: #0FB9F7;
     --blancoFantasma: #F8F8FA;
-    --colorSettings: #f5b800;
+    --colorSettings: #e96949;
+    --colorCotizaciones: #51377B;
+    --colorGastos: #cb0000;
+    --colorCalendario: #0EAB57;
+    --colorProductos: #0578AC;
+    --colorRecibos: #EAAE35;
 }
 
 *{
@@ -50,21 +55,18 @@
 .card{
     padding: var(--paddingPadre);
     border-radius: 1rem;
-    border: 1px solid var(--colorSettings);
-    border-top: 6px solid var(--colorSettings);
-
+    margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 4px 4px 10px;
 }
 
 .iconBox{
     font-size:3rem;
-    color: var(--colorSettings);
     justify-content: center;
 }
 
 .card h2{
     font-size: 1.1rem;
     font-weight: bold;
-    color: var(--colorSettings);
     margin: 1rem 0;
     text-align: center;
 }
