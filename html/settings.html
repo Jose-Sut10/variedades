@@ -6,9 +6,10 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../css/settings.css">
+    <script src="https://kit.fontawesome.com/4765695586.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="encabezadoHome flex">
+    <header class="encabezadoHome">
         <a href="" class="btnHome">Tu empresa aquí</a>
         <a href="" class="btnSalir">Salir</a>
     </header>
@@ -45,12 +46,13 @@
             <div class="field">
                 <span class="file-label">Subir Nuevo Logo (PNG/JPG)</span>
                 <div class="file-wraper">
-                    <button class="file-btn" data-fileBtn>
-                        📁 Seleccionar archivo
-                    </button>
+                    <label for="logoInput" class="file-btn">
+                        <i class="fa-regular fa-folder-open"></i>
+                        Seleccionar archivo
+                    </label>
                     <span class="file-name" id="fileName">Ningún archivo</span>
                 </div>
-                <input type="file" id="logoInput" name="logo" accept="image/png, image/jpeg" />
+                <input type="file" id="logoInput" name="logo" accept="image/png, image/jpeg" hidden/>
             </div>
 
             <div class="logo-section">

@@ -4,6 +4,8 @@
     --azulBajo: #11abe2;
     --blancoFantasma: #F8F8FA;
     --required: #cb0000;  
+    --logoBg: #2c2c2c;
+    --border: #ddd9d0;
 }
 
 *{
@@ -22,6 +24,9 @@ body{
 }
 
 .encabezadoHome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: var(--paddingPadre);
     background-color: var(--azulMedio);
 }
@@ -99,20 +104,30 @@ input[type="tel"]:focus {
 }
 
 .file-wraper{
+    display: flex;
+    align-items: center;
     width: 80vw;
-    margin-bottom: .6rem;
 }
 
 .file-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .6rem;
     width: 60%;
     height: 3rem;
     background-color: var(--azulMedio);
     color: var(--blancoFantasma);
-    font-size: .9rem;
+    font-size: 1rem;
     border: none;
     border-radius: .8rem;
     transition: background 0.2s, transform 0.15s;
     white-space: nowrap;
+}
+
+.file-btn i{
+    color: var(--blancoFantasma);
+    margin: 0 .4rem;
 }
 
 .file-btn:hover { background: var(--azulBajo); transform: translateY(-1px); }
@@ -125,6 +140,67 @@ input[type="tel"]:focus {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+input[type="file"] { display: none; }
+
+.logo-section-label {
+    font-size: 1.2rem;
+}
+
+.logo-preview-box {
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 12px;
+    margin-top: .8rem;
+    background: var(--logoBg);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border: 2px solid var(--border);
+    transition: transform 0.2s;
+}
+
+.logo-preview-box:hover { transform: scale(1.04); }
+
+.logo-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    color: var(--blancoFantasma);
+    text-align: center;
+}
+
+.logo-preview-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.btn-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .6rem;
+    width: 60%;
+    height: 3rem;
+    background-color: var(--azulMedio);
+    color: var(--blancoFantasma);
+    font-size: 1rem;
+    border: none;
+    border-radius: .8rem;
+    transition: background 0.2s, transform 0.15s;
+    white-space: nowrap;
+}
+
+.btn-submit:hover {
+      background: var(--azulBajo);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(44,44,44,0.18);
+ }
+
+.btn-submit:active { transform: translateY(0); }
 
 /*Estilos pie de página*/
 .piePagina{
