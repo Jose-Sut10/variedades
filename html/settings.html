@@ -16,56 +16,56 @@
     <main class="contenido">
         <h1>Configuración de la empresa</h1>
 
-        <div class="field">
-            <label for="nombre">Nombre de la Empresa <span class="req">*</span></label>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre de la empresa" required/>
-        </div>
-
-        <div class="field">
-            <label for="slogan">Slogan</label>
-            <input type="text" id="slogan" name="slogan" placeholder="Slogan de la empresa" />
-        </div>
-
-        <div class="field">
-            <label   label for="tel1">Teléfono 1</label>
-            <input type="tel" id="tel1" name="tel1" placeholder="Número de celular" required/>
-        </div>
-
-        <div class="field">
-            <label for="tel2">Teléfono 2</label>
-            <input type="tel" id="tel2" name="tel2" placeholder="Opcional" />
-        </div>
-
-        <div class="field">
-            <label for="direccion">Dirección</label>
-            <input type="text" id="direccion" name="direccion" placeholder="Ej. 4a Calle, Zona 1" />
-        </div>
-
-        <hr class="divider" />
-
-        <div class="field">
-            <span class="file-label">Subir Nuevo Logo (PNG/JPG)</span>
-            <div class="file-wrapper">
-                <button class="file-btn" data-fileBtn>
-                    📁 Seleccionar archivo
-                </button>
-                <span class="file-name" id="fileName">Ningún archivo</span>
+        <div class="containerContenido flex">
+            <div class="field">
+                <label for="nombre">Nombre de la Empresa <span class="req">*</span></label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre de la empresa" required/>
             </div>
-            <input type="file" id="logoInput" name="logo" accept="image/png, image/jpeg" />
-        </div>
 
-        <div class="logo-section">
-            <span class="logo-section-label">Logo Actual</span>
-            <div class="logo-preview-box" id="logoPreview">
-                <div class="logo-placeholder" id="logoPlaceholder">
-                    <span class="tu">TU</span>
-                    <span class="logo-word">LOGO</span>
-                    <span class="aqui">AQUÍ</span>
+            <div class="field">
+                <label for="slogan">Slogan</label>
+                <input type="text" id="slogan" name="slogan" placeholder="Slogan de la empresa" />
+            </div>
+
+            <div class="field">
+                <label   label for="tel1">Teléfono 1</label>
+                <input type="tel" id="tel1" name="tel1" placeholder="Número de celular" required/>
+            </div>
+
+            <div class="field">
+                <label for="tel2">Teléfono 2</label>
+                <input type="tel" id="tel2" name="tel2" placeholder="Opcional" />
+            </div>
+
+            <div class="field">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Ej. 4a Calle, Zona 1" />
+            </div>
+
+            <div class="field">
+                <span class="file-label">Subir Nuevo Logo (PNG/JPG)</span>
+                <div class="file-wrapper">
+                    <button class="file-btn" data-fileBtn>
+                        📁 Seleccionar archivo
+                    </button>
+                    <span class="file-name" id="fileName">Ningún archivo</span>
+                </div>
+                <input type="file" id="logoInput" name="logo" accept="image/png, image/jpeg" />
+            </div>
+
+            <div class="logo-section">
+                <span class="logo-section-label">Logo Actual</span>
+                <div class="logo-preview-box" id="logoPreview">
+                    <div class="logo-placeholder" id="logoPlaceholder">
+                        <span class="tu">TU</span>
+                        <span class="logo-word">LOGO</span>
+                        <span class="aqui">AQUÍ</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <button class="btn-submit" type="button">Guardar Cambios</button>
+            <button class="btn-submit" type="button">Guardar Cambios</button>
+        </div>
     </div>
     </main>
 
