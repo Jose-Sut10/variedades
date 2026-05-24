@@ -1,13 +1,18 @@
 :root{
     --paddingPadre: 1.2rem;
     --azulMedio: #007DF9;
-    --azulBajo: #0FB9F7;
-    --blancoFantasma: #F8F8FA;  
+    --azulBajo: #11abe2;
+    --blancoFantasma: #F8F8FA;
+    --required: #cb0000;  
 }
 
 *{
     margin: 0;
     box-sizing: border-box;
+}
+
+body{
+    background-color: var(--blancoFantasma);
 }
 
 .flex, .field{
@@ -60,6 +65,68 @@
     gap: .5rem;
 }
 
+label {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+label .req {
+    color: var(--required);
+}
+
+input[type="text"],
+input[type="tel"] {
+    width: 80vw;
+    padding: 1rem;
+    border: 1.5px solid var(--azulBajo);
+    border-radius: .65rem;
+    font-size: 1rem;
+    transition: border-color 0.22s, box-shadow 0.22s, background 0.22s;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+    outline: none;
+    border: 2px solid var(--azulMedio);
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(44,44,44,0.08);
+}
+
+.file-label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: .5rem; 
+}
+
+.file-wraper{
+    width: 80vw;
+    margin-bottom: .6rem;
+}
+
+.file-btn{
+    width: 60%;
+    height: 3rem;
+    background-color: var(--azulMedio);
+    color: var(--blancoFantasma);
+    font-size: .9rem;
+    border: none;
+    border-radius: .8rem;
+    transition: background 0.2s, transform 0.15s;
+    white-space: nowrap;
+}
+
+.file-btn:hover { background: var(--azulBajo); transform: translateY(-1px); }
+.file-btn:active { transform: translateY(0); }
+
+.file-name {
+    font-size: 0.9rem;
+    margin-left: .5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*Estilos pie de página*/
 .piePagina{
     padding: var(--paddingPadre);
     text-align: center;
