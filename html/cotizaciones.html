@@ -6,6 +6,7 @@
     <title>Cotizaciones</title>
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../css/cotizaciones.css ">
+    <script src="https://kit.fontawesome.com/4765695586.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="encabezadoHome flex">
@@ -82,8 +83,34 @@
                         value="26/05/2026"
                         readonly>
                 </div>
+            </div>   
+            
+            <div class="productoBox">
+                <p>Información del producto</p>
+                <div class="field descripcionField">
+                    <label>Descripción<span class="req">*</span></label>
+                    <input type="text" placeholder="Descripción del producto" required>
+                </div>
 
-            </div>         
+                <div class="detalleProducto">
+                    <div class="field small">
+                        <label>Cantidad</label>
+                        <input type="number">
+                    </div>
+
+                    <div class="field small">
+                        <label>Precio Q</label>
+                        <input type="number">
+                    </div>
+
+                    <div class="field small">
+                        <label>Total Q</label>
+                        <input type="number" readonly>
+                    </div>
+                    <i class="fa-solid fa-square-xmark btnDelete" data-btnDelete></i>
+                </div>
+            </div>
+            
         </form>
     </main>
 
