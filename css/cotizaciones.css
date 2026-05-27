@@ -1,0 +1,80 @@
+:root{
+    --paddingPadre: 1.2rem;
+    --azulPrincipal: #0057FA;
+    --azulMedio: #007DF9;
+    --azulBajo: #0FB9F7;
+    --blancoFantasma: #F8F8FA;
+    --tamanioH2: 1.3rem + .25vw;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezadoHome{
+    padding: var(--paddingPadre);
+    background-color: var(--azulMedio);
+}
+
+.btnHome, .btnSalir{
+    color: var(--blancoFantasma);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.btnSalir{
+    border: 3px solid var(--blancoFantasma);
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.contenidoCoti{
+    padding: var(--paddingPadre);
+    animation: fadeUp 0.5s ease both;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.contenidoCoti h2{
+    text-align: center;
+    font-size: calc(var(--tamanioH2));
+    margin-bottom: 1rem;
+    border-bottom: .2rem solid var(--azulBajo);
+    padding-bottom: 10px;
+}
+
+.formCliente{
+    padding: 0 .5rem;
+}
+
+.form-header p{
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 1.15rem;
+}
+
+.field input{
+    width: 100%;
+    height: 7%;
+    padding: 1rem;
+    margin-bottom: .8rem;
+    border: 1.5px solid var(--azulBajo);
+    border-radius: .65rem;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizaciones</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../css/cotizaciones.css ">
+</head>
+<body>
+    <header class="encabezadoHome flex">
+        <a href="home.html" class="btnHome" data-btnHome>Tu empresa aquí</a>
+        <a href="" class="btnSalir">Salir</a>
+    </header>
+
+    <main class="contenidoCoti">
+        <form method="POST" class="formCliente">
+            <div class="form-header">
+                <h2>Nueva Cotización</h2>
+                <p>Completa la información del cliente</p>
+            </div>
+
+            <div class="datosCliente">
+                <div class="field">
+                    <label for="cliente_nombre">Nombre del cliente<span class="req">*</span></label>
+                    <input 
+                        type="text"
+                        id="cliente_nombre"
+                        name="cliente_nombre"
+                        class="form-control"
+                        placeholder="Ej. Juan Pérez"
+                        required>
+                </div>
+
+                <div class="field">
+                    <label for="cliente_direccion">Dirección</label>
+
+                    <input 
+                        type="text"
+                        id="cliente_direccion"
+                        name="cliente_direccion"
+                        class="form-control"
+                        placeholder="Ej. Zona 1, Chichicastenango">
+                </div>
+
+                <div class="field">
+                    <label for="cliente_telefono">
+                        Teléfono
+                    </label>
+
+                    <input 
+                        type="tel"
+                        id="cliente_telefono"
+                        name="cliente_telefono"
+                        class="form-control"
+                        placeholder="Ej. 5555-5555">
+                </div>
+
+                <div class="field">
+                    <label for="numero">
+                        Número de cotización
+                    </label>
+
+                    <input 
+                        type="text"
+                        id="numero"
+                        name="numero"
+                        class="form-control readonly"
+                        value="Q-0138"
+                        readonly>
+                </div>
+
+                <div class="field">
+                    <label for="fecha">
+                        Fecha
+                    </label>
+
+                    <input 
+                        type="text"
+                        id="fecha"
+                        class="form-control readonly"
+                        value="26/05/2026"
+                        readonly>
+                </div>
+
+            </div>         
+        </form>
+    </main>
+
+    <footer class="piePagina">
+                <p> © 2026 Todos los derechos reservados.</p>
+                <p class="devs">Desarollado por 
+                    <a href="https://jose-sut10.github.io/Portafolio-personal/">Pixel Code</a>
+                </p>
+    </footer>
+</body>
+</html>
