@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="encabezadoHome">
-        <a href="" class="btnHome">Tu empresa aquí</a>
+        <a href="home.html" class="btnHome" data-btnHome>Tu empresa aquí</a>
         <a href="" class="btnSalir">Salir</a>
     </header>
 
@@ -20,7 +20,7 @@
         <div class="containerContenido flex">
             <div class="field">
                 <label for="nombre">Nombre de la Empresa <span class="req">*</span></label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre de la empresa" required/>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre de la empresa" data-nameCompany required/>
             </div>
 
             <div class="field">
@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <button class="btn-submit" type="button">Guardar Cambios</button>
+            <button class="btn-submit" type="button" data-btnSave>Guardar Cambios</button>
         </div>
     </div>
     </main>
@@ -77,6 +77,6 @@
                     <a href="https://jose-sut10.github.io/Portafolio-personal/">Pixel Code</a>
                 </p>
     </footer>
-    <script src="../js/settings/settings.js"></script>
+    <script type="module" src="../js/settings/settings.js"></script>
 </body>
 </html>

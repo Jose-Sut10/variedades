@@ -46,7 +46,11 @@
     padding: var(--paddingPadre);
 }
 
-.conatainerContenido h3{
+.containerContenido{
+    padding: 0 var(--paddingPadre);
+}
+
+.containerContenido h3{
     text-align: center;
     font-size: 1.4rem;
     font-weight: bold;
@@ -60,9 +64,17 @@
 }
 
 .card{
+    text-decoration: none;
     padding: var(--paddingPadre);
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.3) 4px 4px 10px;
+    transition: .25s ease;
+}
+
+.card:hover{
+    background: color-mix(in srgb, var(--cardColor) 20%, white);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(44,44,44,0.18);
 }
 
 .iconBox{
