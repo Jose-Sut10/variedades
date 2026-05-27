@@ -18,7 +18,7 @@
         <form method="POST" class="formCliente">
             <div class="form-header">
                 <h2>Nueva Cotización</h2>
-                <p>Completa la información del cliente</p>
+                <p class="subtitle">Completa la información del cliente</p>
             </div>
 
             <div class="datosCliente">
@@ -86,7 +86,7 @@
             </div>   
             
             <div class="productoBox">
-                <p>Información del producto</p>
+                <p class="subtitle">Información del producto</p>
                 <div class="field descripcionField">
                     <label>Descripción<span class="req">*</span></label>
                     <input type="text" placeholder="Descripción del producto" required>
@@ -113,7 +113,7 @@
             <button type="button" id="addItem" class="btnPlusItem">+ Agregar item</button>
 
             <div class="containerSubtotales">
-                <p>Información del precio final</p>
+                <p class="subtitle">Información del precio final</p>
                 <div class="contenidoSubTotal field">
                     <label for="subtotal">SubTotal</label>
                     <input id="subtotal" name="subtotal" readonly="" placeholder="Subtotal">
@@ -133,6 +133,39 @@
             </div>
             <button class="btnSaveCot">Guardar Cotización</button>
         </form>
+
+        <div class="searchCoti">
+            <p class="subtitle">Buscar cotizaciones</p>
+            <form method="GET" class="formSearch">
+                <div class="field">
+                    <label>Ver por pago:</label>
+                    <select name="filtro_pago" class="filterPay">
+                        <option value="">Todos</option>
+                        <option value="solo_cotizacion">Cotización pendiente</option>
+                        <option value="con_anticipo">Anticipo Recibido</option>
+                        <option value="pago_final">Pago realizado</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Desde:</label>
+                    <input type="date" name="fecha_desde">
+                </div>
+                <div class="field">
+                    <label>Hasta:</label>
+                    <input type="date" name="fecha_hasta">
+                </div>
+                <div class="field">
+                    <label>Búsqueda rápida:</label>
+                    <input type="text" id="searchInput" placeholder="Cliente o número...">
+                </div>
+                <div class="containerBtsFilter">
+                    <div class="btnsFilter">
+                        <button type="submit" class="btnFiltro">Filtrar</button>
+                        <a href="#" class="btnLimpiar">Limpiar</a>
+                    </div>
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer class="piePagina">
