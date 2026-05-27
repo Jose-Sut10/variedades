@@ -110,7 +110,28 @@
                     <i class="fa-solid fa-square-xmark btnDelete" data-btnDelete></i>
                 </div>
             </div>
-            
+            <button type="button" id="addItem" class="btnPlusItem">+ Agregar item</button>
+
+            <div class="containerSubtotales">
+                <p>Información del precio final</p>
+                <div class="contenidoSubTotal field">
+                    <label for="subtotal">SubTotal</label>
+                    <input id="subtotal" name="subtotal" readonly="" placeholder="Subtotal">
+                </div>
+                <div class="contenidoSubTotal field">
+                    <label for="descuento">Descuentos</label>
+                    <input id="descuento" name="descuento" placeholder="Descuento">
+                </div>
+                <div class="contenidoSubTotal field">
+                    <label for="anticipo">Anticipo</label>
+                    <input id="anticipo" name="anticipo" placeholder="Anticipo">
+                </div>
+                <div class="contenidoSubTotal field">
+                    <label for="total">Total</label>
+                    <input id="total" name="total" readonly placeholder="Total">
+                </div>
+            </div>
+            <button class="btnSaveCot">Guardar Cotización</button>
         </form>
     </main>
 

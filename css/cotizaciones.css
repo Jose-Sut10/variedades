@@ -121,6 +121,47 @@ input:focus{
     box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.192);
 }
 
+.btnPlusItem{
+    padding: .6rem;
+    width: 45%;
+    height: 3rem;
+    background-color: var(--azulMedio);
+    color: var(--blancoFantasma);
+    font-size: 1rem;
+    border: none;
+    border-radius: .8rem;
+    transition: background 0.2s, transform 0.15s;
+    margin-top: 1rem;
+}
+
+.btnPlusItem:hover, .btnSaveCot:hover {
+    background: var(--azulBajo);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(44,44,44,0.18);
+}
+
+.btnPlusItem:active, .btnSaveCot:active { transform: translateY(0); }
+
+/*Subtotales*/
+.containerSubtotales p{
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.btnSaveCot{
+    width: 100%;
+    padding: .6rem;
+    height: 3rem;
+    background-color: var(--azulMedio);
+    color: var(--blancoFantasma);
+    font-size: 1.12rem;
+    border: none;
+    border-radius: .8rem;
+    transition: background 0.2s, transform 0.15s;
+}
+
 /*Estilos pie de página*/
 .piePagina{
     padding: var(--paddingPadre);
