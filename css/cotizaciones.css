@@ -1,40 +1,4 @@
-:root{
-    --paddingPadre: 1.2rem;
-    --azulPrincipal: #0057FA;
-    --azulMedio: #007DF9;
-    --azulBajo: #0FB9F7;
-    --blancoFantasma: #F8F8FA;
-    --required: #cb0000;  
-    --tamanioH2: 1.3rem + .25vw;
-}
-
-*{
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.encabezadoHome{
-    padding: var(--paddingPadre);
-    background-color: var(--azulMedio);
-}
-
-.btnHome, .btnSalir{
-    color: var(--blancoFantasma);
-    font-size: 1rem;
-    text-decoration: none;
-}
-
-.btnSalir{
-    border: 3px solid var(--blancoFantasma);
-    border-radius: .5rem;
-    padding: .5rem;
-}
+@import url('./index.css');
 
 .contenidoCoti{
     padding: var(--paddingPadre);
@@ -211,21 +175,4 @@ input:focus{
 .btnLimpiar:hover {
     background-color: #e2e6ea;
     color: #343a40;
-}
-
-/*Estilos pie de página*/
-.piePagina{
-    padding: var(--paddingPadre);
-    text-align: center;
-    font-size: 1.15rem;
-}
-
-.devs{
-    margin-top: .5rem;
-}
-
-.devs a{
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--azulMedio);
 }

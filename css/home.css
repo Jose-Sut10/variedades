@@ -1,45 +1,4 @@
-:root{
-    --paddingPadre: 1.2rem;
-    --azulPrincipal: #0057FA;
-    --azulMedio: #007DF9;
-    --azulBajo: #0FB9F7;
-    --blancoFantasma: #F8F8FA;
-    --colorSettings: #e96949;
-    --colorCotizaciones: #51377B;
-    --colorGastos: #cb0000;
-    --colorCalendario: #0EAB57;
-    --colorProductos: #0578AC;
-    --colorRecibos: #EAAE35;
-    --colorReportes: #1977d6;
-}
-
-*{
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.encabezadoHome{
-    padding: var(--paddingPadre);
-    background-color: var(--azulMedio);
-}
-
-.btnHome, .btnSalir{
-    color: var(--blancoFantasma);
-    font-size: 1rem;
-    text-decoration: none;
-}
-
-.btnSalir{
-    border: 3px solid var(--blancoFantasma);
-    border-radius: .5rem;
-    padding: .5rem;
-}
+@import url('./index.css');
 
 /*Estilos main*/
 .contenido{

@@ -1,47 +1,14 @@
-:root{
-    --paddingPadre: 1.2rem;
-    --azulMedio: #007DF9;
-    --azulBajo: #11abe2;
-    --blancoFantasma: #F8F8FA;
-    --required: #cb0000;  
-    --logoBg: #2c2c2c;
-    --border: #ddd9d0;
-}
-
-*{
-    margin: 0;
-    box-sizing: border-box;
-}
+@import url('./index.css');
 
 body{
     background-color: var(--blancoFantasma);
 }
 
-.flex, .field{
+.flexStt, .field{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-.encabezadoHome{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--paddingPadre);
-    background-color: var(--azulMedio);
-}
-
-.btnHome, .btnSalir{
-    color: var(--blancoFantasma);
-    font-size: 1rem;
-    text-decoration: none;
-}
-
-.btnSalir{
-    border: 3px solid var(--blancoFantasma);
-    border-radius: .5rem;
-    padding: .5rem;
-}   
 
 /*estilos main*/
 .contenido{
@@ -201,20 +168,3 @@ input[type="file"] { display: none; }
 }
 
 .btn-submit:active { transform: translateY(0); }
-
-/*Estilos pie de página*/
-.piePagina{
-    padding: var(--paddingPadre);
-    text-align: center;
-    font-size: 1.15rem;
-}
-
-.devs{
-    margin-top: .5rem;
-}
-
-.devs a{
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--azulMedio);
-}
