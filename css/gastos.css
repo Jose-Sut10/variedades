@@ -1,2 +1,17 @@
 @import url('../reset.css');
 @import url('./index.css');
+
+.descGastos{
+    padding: .9rem;
+    border: 1.5px solid var(--azulBajo);
+    border-radius: .6rem;
+}
+
+.btnResgistroGasto{
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.iconoPlus{
+    margin-right: .5rem;
+}

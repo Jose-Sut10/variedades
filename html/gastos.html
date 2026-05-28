@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gastos</title>
     <link rel="stylesheet" href="../css/gastos.css">
+    <script src="https://kit.fontawesome.com/4765695586.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="encabezadoHome flex">
@@ -13,7 +14,35 @@
     </header>
 
     <main class="contenido">
-        
+        <h1>Registro de gastos</h1>
+        <div class="containerGastos">
+            <form method="post">
+                <input type="hidden" name="action" value="create">
+                <div class="descGastos">
+                    <div class="field">
+                        <label for="descripcion"><p>Descripción del Gasto</p></label>
+                        <input id="descripcion" name="descripcion" placeholder="Ej. Pago de luz, renta" required="">
+                    </div>
+
+                    <div class="field">
+                        <label for="monto"><p>Monto (Q)</p></label>
+                        <input id="monto" name="monto" type="number" step="0.01" min="0.01" placeholder="Monto" required="">
+                    </div>
+
+                    <div class="field">
+                        <label for="fecha"><p>Fecha</p></label>
+                        <input id="fecha" name="fecha" type="date" value="2026-05-27" required="">
+                    </div>
+
+                    <div class="field">
+                        <button class="btnAction btnResgistroGasto" title="Registrar gasto">
+                            <i class="fa-solid fa-plus iconoPlus"></i>
+                            <span>Añadir</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer class="piePagina">
