@@ -1,9 +1,6 @@
 @import url('./index.css');
 
 /*Estilos main*/
-.contenido{
-    padding: var(--paddingPadre);
-}
 
 .containerContenido{
     padding: 0 var(--paddingPadre);

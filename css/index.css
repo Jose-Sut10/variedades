@@ -94,6 +94,72 @@ input:focus{
     box-shadow: 0 0 0 3px rgba(44,44,44,0.08);
 }
 
+/*FILTRO*/
+.formSearch{
+    padding: .9rem;
+    border: 1.5px solid var(--azulBajo);
+    border-radius: .6rem;
+}
+
+.filterPay{
+    height: 3.3rem;
+    margin-bottom: 1rem;
+    border: 1.5px solid var(--azulBajo);
+    border-radius: .65rem;
+    padding: 1rem;
+    transition: border-color 0.22s, box-shadow 0.22s, background 0.22s;
+}
+
+.filterPay:focus{
+    outline: 2px solid var(--azulMedio); /* No ocupa espacio */
+    border: 1.5px solid var(--azulBajo); /* Mantiene el borde original */
+    box-shadow: 0 0 0 3px rgba(44,44,44,0.08);
+}
+
+
+.btnsFilter{
+    width: 100%;
+    display: flex;
+}
+
+.btnFiltro, .btnLimpiar{
+    width: 50%;
+    height: 2.8rem;
+    text-decoration: none;
+    font-size: 1.12rem;
+    padding: 8px 25px;
+    border: 1px solid var(--azulMedio);
+    transition: all 0.3s ease;
+}
+
+
+.btnFiltro {
+    background-color: var(--azulMedio);
+    color: var(--blancoFantasma);
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.btnLimpiar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    color: #000;
+    border-left: none;
+    border-color: #838383;
+    border-radius: 0 4px 4px 0;
+}
+
+.btnFiltro:hover {
+    background-color: var(--azulBajo);
+}
+
+.btnLimpiar:hover {
+    background-color: #e2e6ea;
+    color: #343a40;
+}
+
 /*Estilos pie de página*/
 .piePagina{
     padding: var(--paddingPadre);
