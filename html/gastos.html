@@ -15,7 +15,7 @@
 
     <main class="contenido">
         <h1>Registro de gastos</h1>
-        <div class="containerGastos">
+        <section class="containerGastos">
             <form method="post">
                 <input type="hidden" name="action" value="create">
                 <div class="descGastos">
@@ -35,14 +35,29 @@
                     </div>
 
                     <div class="field">
-                        <button class="btnAction btnResgistroGasto" title="Registrar gasto">
+                        <button class="btnAction btnResgistroGasto" data-btnPlus title="Registrar gasto">
                             <i class="fa-solid fa-plus iconoPlus"></i>
                             <span>Añadir</span>
                         </button>
                     </div>
                 </div>
             </form>
-        </div>
+        </section>
+
+        <section class="containerTable">
+            <p>Historial de gastos</p>
+            <table class="tablaGastos">
+                <thead>
+                    <tr>
+                        <th width="12%">No</th>
+                        <th width="38%">Detalle</th>
+                        <th width="22%">Monto</th>
+                        <th width="28%">Fecha</th>
+                    </tr>
+                </thead>
+                <tbody data-bodyTbGastos></tbody>
+            </table>
+        </section>
     </main>
 
     <footer class="piePagina">
@@ -51,5 +66,7 @@
                     <a href="https://jose-sut10.github.io/Portafolio-personal/">Pixel Code</a>
                 </p>
     </footer>
+
+    <script type="module" src="../js/gastos/gastos.js"></script>
 </body>
 </html>

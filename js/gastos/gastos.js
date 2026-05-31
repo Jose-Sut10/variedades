@@ -1,0 +1,1 @@
+import { agregarGasto } from "./tbGastos.js";
