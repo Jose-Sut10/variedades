@@ -1,0 +1,45 @@
+@import url('index.css');
+
+.navItem a{
+    font-size: 1.05rem;
+    text-decoration: none;
+}
+
+.listaInventario {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.listaInventario a {
+  text-decoration: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  color: var(--blancoFantasma);
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* --- COLORES POR POSICIÓN (Usando selectores de atributo) --- */
+[aria-controls="gestion-stock"] { background-color: #a5d6a7; }
+[aria-controls="gestion-stock"][aria-selected="true"] { background-color: #2e7d32; }
+[aria-controls="egreso-material"] { background-color: #ef9a9a; }
+
+[aria-controls="egreso-material"][aria-selected="true"] { background-color: #c62828; }
+[aria-controls="material-salidas"] { background-color: #90caf9; }
+[aria-controls="material-salidas"][aria-selected="true"] { background-color: #1565c0; }
+
+.containerIngreso{
+  margin-top: var(--paddingPadre);
+}
+
+.titleIngreso{
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: var(--paddingPadre);
+}
+
+label{
+  font-size: 1.2rem;
+  font-weight: 500;
+}

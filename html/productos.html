@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../css/productos.css">
+    <script src="https://kit.fontawesome.com/4765695586.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="encabezadoHome flex">
+        <a href="home.html" class="btnHome" data-btnHome>Tu empresa aquí</a>
+        <a href="" class="btnSalir">Salir</a>
+    </header>
+
+    <main class="contenido">
+        <h1>Gestor de Productos (inventario)</h1>
+        <section class="containerProd">
+            <ul class="listaInventario" role="tablist">
+                <li class="navItem" role="presentation">
+                    <a type="button" role="tab" aria-controls="gestion-stock" aria-selected="true" href="#gestion-stock">Ingreso</a>
+                </li>
+                <li class="navItem" role="presentation">
+                    <a type="button" role="tab" aria-controls="egreso-material" aria-selected="false" href="#egreso-material" tabindex="-1">Egreso</a>
+                </li>
+                <li class="navItem" role="presentation">
+                    <a type="button" role="tab" aria-controls="material-salidas" aria-selected="false" href="#material-salidas" tabindex="-1">Historial</a>
+                </li>
+            </ul>
+
+            <div class="containerIngreso">
+                <h2 class="titleIngreso">Agregar/Editar Material</h2>
+                <div class="field">
+                    <form method="post">
+                        <input type="hidden" name="action" value="save">
+                        <input type="hidden" name="id" value="0">
+                                
+                        <div class="datosMaterial">
+                            <div class="field">
+                                <label for="nombre" class="form-label">Nombre del Material</label>
+                                <input name="nombre" id="nombre" class="form-control" value="" required="">
+                            </div>
+                            <div class="field">
+                                <label for="descripcion" class="form-label">Descripción</label>
+                                <input name="descripcion" id="descripcion" class="form-control" value="">
+                            </div>
+                            <div class="field">
+                                <label for="stock" class="form-label">Stock</label>
+                                <input type="number" name="stock" id="stock" class="form-control" value="0" min="0" required="">
+                            </div>
+                            <div class="containerBtn">
+                                <button type="submit" class="btnAction">Agregar Material</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="piePagina">
+                <p> © 2026 Todos los derechos reservados.</p>
+                <p class="devs">Desarollado por 
+                    <a href="https://jose-sut10.github.io/Portafolio-personal/">Pixel Code</a>
+                </p>
+    </footer>
+    <script type="module" src="../js/home/home.js"></script>
+</body>
+</html>
